@@ -38,17 +38,11 @@ class Main {
 
         List<Point> pointsToFold = new LinkedList<Point>(points);
         
-        // folder.printPoints(pointsToFold);
-
-        /*
         for (Fold fold : folds) {
             pointsToFold = folder.Apply(fold, pointsToFold);
         }
-        */
-
-        pointsToFold = folder.Apply(folds.get(0), pointsToFold);
-
-        // folder.printPoints(pointsToFold);
+        
+        folder.printPoints(pointsToFold);
           
         System.out.println("Finished, " + pointsToFold.size() + " points and " + folds.size() + " folds read.");
     }    
